@@ -27,12 +27,12 @@ public class BrokerController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(BrokerController.class);
 
 	// to add broker
-	@PostMapping(path = "/addbroker")
-	public ResponseEntity<MBroker> addBroker(@Valid @RequestBody MBroker broker) {
-		LOGGER.info("Broker addBroker()");
-		MBroker mbroker = brokerService.addBroker(broker);
-		return new ResponseEntity<MBroker>(mbroker, HttpStatus.CREATED);
-	}
+//	@PostMapping(path = "/addbroker")
+//	public ResponseEntity<MBroker> addBroker(@Valid @RequestBody MBroker broker) {
+//		LOGGER.info("Broker addBroker()");
+//		MBroker mbroker = brokerService.addBroker(broker);
+//		return new ResponseEntity<MBroker>(mbroker, HttpStatus.CREATED);
+//	}
 
 	// to update broker by broker Id
 	@PutMapping(path = "/editbroker/{userid}")
